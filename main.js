@@ -36,11 +36,11 @@ function validate() {
         var mailformat = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
 
         if(email.value.match(mailformat)) {
-            document.form1.text1.focus();
+            document.form.email.focus();
             return true;
         } else {
             alert("Sähköpostiosoitteen tulee olla sähköpostiosoitteen muotoinen.");
-            document.form1.text1.focus();
+            document.form.email.focus();
             return false;
         }
     }
