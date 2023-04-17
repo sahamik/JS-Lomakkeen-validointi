@@ -45,3 +45,8 @@ function validate() {
         }
     }
 
+    function submitForm() {
+      var form = document.getElementById("form");
+      form.submit();
+    }
+

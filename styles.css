@@ -55,6 +55,12 @@ label[for="info"] {
 #info {
     height: 100px;
     width: 300px;
+    display: block;
+    text-align: left;
+    vertical-align: top;
+    overflow: auto;
+    resize: none;
+    padding: 5px;
 }
 
 #submit {

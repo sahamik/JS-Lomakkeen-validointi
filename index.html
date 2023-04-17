@@ -14,7 +14,7 @@
     </section>
 
     <section class="lomake">
-        <form name="form">
+        <form name="form" onsubmit="validate(), validateEmail()">
             <h3>Siirry kentästä toiseen tab-näppäimellä.</h3>
             <label for="userId">Käyttäjä ID:</label>
             <input type="text" name="userID" id="userID" minlength="6" required><br>
@@ -301,9 +301,9 @@
             <label for="other">Muu kuin Suomi</label><br>
 
             <label for="info">Lisätietoja:</label>
-            <input type="text" name="info" id="info"><br>
+            <textarea id="info" name="info"></textarea>
 
-            <input type="submit" id="submit" value="Lähetä" onclick="validate(), validateEmail()">
+            <input type="submit" id="submit" value="Lähetä" onclick="submitForm()">
         </form>
     </section>
     
